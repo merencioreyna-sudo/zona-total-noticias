@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin | Zona Total Noticias</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Zona Total Noticias</h1>
+</header>
+
+<main class="content admin-content">
+
+  <!-- LOGIN (NO FORM) -->
+  <section id="login-section">
+  <div class="admin-card">
+    <h2>Acceso Administrador</h2>
+
+    <label>
+      Usuario
+      <input type="text" id="username" />
+    </label>
+
+    <label>
+      Contraseña
+      <input type="password" id="password" />
+    </label>
+
+    <button id="login-btn">Entrar</button>
+
+    <p id="login-error" style="display:none;color:red;margin-top:10px;">
+      Usuario o contraseña incorrectos
+    </p>
+  </div>
+</section>
+
+
+  <!-- PANEL ADMIN -->
+  <section id="admin-panel" style="display:none;">
+    <h2>Panel de Administración</h2>
+
+    <form id="news-form" class="admin-form">
+
+
+      <label>
+        Título
+        <input type="text" id="titulo" required />
+      </label>
+
+      <label>
+        Resumen
+        <textarea id="resumen" required></textarea>
+      </label>
+
+      <label>
+        Contenido
+        <textarea id="contenido" rows="6" required></textarea>
+      </label>
+
+      <label>
+        Categoría
+        <select id="categoria" required>
+          <option value="">Seleccionar</option>
+          <option value="nacional">Nacional</option>
+          <option value="internacional">Internacional</option>
+          <option value="economia">Economía</option>
+          <option value="tecnologia">Tecnología</option>
+          <option value="cultura">Cultura</option>
+          <option value="deportes">Deportes</option>
+          <option value="farandula">Farandula</option>
+        </select>
+      </label>
+
+      <label>
+        Imagen URL
+        <input type="url" id="imagen_url" required />
+      </label>
+
+      <label>
+        Autor
+        <input type="text" id="autor" required />
+      </label>
+
+      <label>
+        Fuente
+        <input type="text" id="fuente" required />
+      </label>
+
+      <label>
+        Fecha
+        <input type="date" id="fecha" required />
+      </label>
+
+      <label>
+        Destacada
+        <select id="destacada" required>
+          <option value="false">No</option>
+          <option value="true">Sí</option>
+        </select>
+      </label>
+
+      <button type="submit">Guardar noticia</button>
+      <p id="form-msg" style="display:none;margin-top:10px;"></p>
+    </form>
+
+    <button id="logout-btn">Cerrar sesión</button>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  © Zona Total Noticias
+</footer>
+
+<script src="js/admin.js"></script>
+</body>
+</html>
