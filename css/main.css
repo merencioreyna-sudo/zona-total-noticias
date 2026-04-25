@@ -766,4 +766,17 @@ header {
   white-space: pre-line;
 }
 
-
+.zt-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff0000, #ff4d4d);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  vertical-align: middle;
+}
