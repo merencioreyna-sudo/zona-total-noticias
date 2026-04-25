@@ -20,8 +20,12 @@
     <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
 
     <nav class="main-nav">
-      <a href="index.html"><span class="icon">🏠</span> Portada</a>
-      <a href="index.html?cat=nacional"><span class="icon">📰</span> Nacional</a>
+  <a href="https://merencioreyna-sudo.github.io/zona-total-peliculas/">
+    <span class="icon">🏠</span> Inicio
+  </a>
+
+  <a href="index.html"><span class="icon">📰</span> Portada</a>
+      <a href="index.html?cat=nacional"><span class="icon">📌</span> Nacional</a>
       <a href="index.html?cat=internacional"><span class="icon">🌍</span> Internacional</a>
       <a href="index.html?cat=economia"><span class="icon">💰</span> Economía</a>
       <a href="index.html?cat=tecnologia"><span class="icon">💻</span> Tecnología</a>
@@ -59,7 +63,12 @@
     if (!btn || !nav) return;
 
     btn.addEventListener('click', function () {
-      nav.classList.toggle('open');
+  nav.classList.toggle('open');
+
+  // 👇 fuerza que empiece desde arriba siempre
+  if (nav.classList.contains('open')) {
+    nav.scrollTop = 0;
+  }
       btn.setAttribute(
         'aria-expanded',
         nav.classList.contains('open') ? 'true' : 'false'
