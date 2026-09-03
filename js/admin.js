@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
       };
 
       fetch(
-        'https://script.google.com/macros/s/AKfycbyckBnsCwNUMVo2qfaUhiS7zWRsx7k1TnnHLdwU8g_DIrK4Pqo9DTlZWERLi-dq6Wy0/exec',
+        'https://script.google.com/macros/s/AKfycbwzWyaApVPMsqjx1gFXdXwtSnYBeJXexsxdpp1WcDqDXrF4lsrJ61LKnuSmtMdhLGqh/exec',
         {
           method: 'POST',
           mode: 'no-cors',
