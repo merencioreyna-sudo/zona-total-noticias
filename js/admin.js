@@ -6,15 +6,17 @@ document.addEventListener('DOMContentLoaded', function () {
       e.preventDefault();
 
       const data = {
-        titulo: document.getElementById('titulo').value,
-        resumen: document.getElementById('resumen').value,
-        contenido: document.getElementById('contenido').value,
-        categoria: document.getElementById('categoria').value,
-        imagen_url: document.getElementById('imagen_url').value,
-        autor: document.getElementById('autor').value,
-        fuente: document.getElementById('fuente').value,
-        destacada: document.getElementById('destacada').value
-      };
+  id: crypto.randomUUID(),
+  titulo: document.getElementById('titulo').value,
+  resumen: document.getElementById('resumen').value,
+  contenido: document.getElementById('contenido').value,
+  categoria: document.getElementById('categoria').value,
+  imagen_url: document.getElementById('imagen_url').value,
+  autor: document.getElementById('autor').value,
+  fuente: document.getElementById('fuente').value,
+  fecha: document.getElementById('fecha').value,
+  destacada: document.getElementById('destacada').value
+};
 
       fetch(
         'https://script.google.com/macros/s/AKfycbwzWyaApVPMsqjx1gFXdXwtSnYBeJXexsxdpp1WcDqDXrF4lsrJ61LKnuSmtMdhLGqh/exec',
